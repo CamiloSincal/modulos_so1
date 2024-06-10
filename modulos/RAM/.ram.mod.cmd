@@ -1,0 +1,1 @@
+cmd_/home/usuario/Escritorio/vacas_sopes1/SO1_JUN2024_PAREJA-23/Proyecto1/backend/RAM/ram.mod := { echo  /home/usuario/Escritorio/vacas_sopes1/SO1_JUN2024_PAREJA-23/Proyecto1/backend/RAM/ram.o;  echo; } > /home/usuario/Escritorio/vacas_sopes1/SO1_JUN2024_PAREJA-23/Proyecto1/backend/RAM/ram.mod
