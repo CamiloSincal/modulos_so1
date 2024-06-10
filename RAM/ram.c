@@ -29,13 +29,12 @@ static int abrir_aproc(struct inode *inode, struct file *file)
 {
     return single_open(file, escribir_a_proc, NULL);
 }
-// en versiones de kernel inferiores al 5.4 utilizar file_operations en lugar de proc_ops
-static const struct file_operations archivo_operaciones = { 
-    .owner = THIS_MODULE,
-    .open = abrir_aproc,
-    .read = seq_read,
-    .llseek = seq_lseek,
-    .release = single_release,
+
+static const struct proc_ops archivo_operaciones = {
+    .proc_open = abrir_aproc,
+    .proc_read = seq_read,
+    .proc_lseek = seq_lseek,
+    .proc_release = single_release,
 };
 
 static int __init modulo_init(void)
